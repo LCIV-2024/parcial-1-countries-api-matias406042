@@ -1,0 +1,10 @@
+version: '3'
+services:
+  java-app:
+    container_name: java-app
+    image: pee-java_app
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - app.dev-email=your-email@noeexiste.com
